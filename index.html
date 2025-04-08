@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/main.min.css" />
   </head>
   <body>
-    <header class="header none">
+    <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-row">
@@ -26,6 +26,8 @@
                 </ul>
               </nav>
             </div>
+
+            <div class="header__nav-btn">btn</div>
           </div>
         </div>
       </div>
@@ -117,7 +119,7 @@
         </div>
       </section>
 
-      <section class="cta">
+      <section class="cta none">
         <div class="container">
           <div class="cta__title">
             <h2 class="title-2">Хотите посмотреть?</h2>
@@ -133,7 +135,8 @@
               <input type="text" class="form__input" placeholder="Ваше имя" />
               <input type="text" class="form__input" placeholder="Ваше телефон" />
               <p class="form__privacy">
-                *Мы никому не передаем ваши данные.<br /> И не сохраняем ваш номер в базу.
+                *Мы никому не передаем ваши данные.<br />
+                И не сохраняем ваш номер в базу.
               </p>
 
               <button type="submit" class="form__btn">Посмотреть район</button>
@@ -141,6 +144,96 @@
           </div>
         </div>
       </section>
+
+      <section class="video none">
+        <h2 class="visually-hidden">Video...</h2>
+        <div class="container">
+          <a href="google.com" class="video__link">
+            <img src="/img/video/play-button.svg" alt="Background video" class="video__icon" />
+            <img src="/img/video/video-bg.svg" alt="Background video" class="video__img" />
+          </a>
+        </div>
+      </section>
+
+      <section class="section-map none">
+        <div class="container">
+          <div class="section-map__title">
+            <h2 class="title-2">Район на карте</h2>
+          </div>
+
+          <div class="section-map__map">
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback none">
+        <div class="container">
+          <div class="feedback__title">
+            <h2 class="title-2">Есть вопросы?</h2>
+          </div>
+
+          <form class="feedback__form form">
+            <p class="form__privacy">
+              *Мы никому не передаем ваши данные.<br />
+              И не сохраняем ваш номер в базу.
+            </p>
+            <input type="text" class="form__input" placeholder="Ваше имя" />
+            <input type="text" class="form__input" placeholder="Ваше телефон" />
+
+            <button type="submit" class="form__btn">Посмотреть район</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer none">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__logo">
+            <a href="/">
+              <img src="/img/header/header-logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="footer__nav">
+            <nav>
+              <ul class="footer__nav-list">
+                <li><a href="/">О комплексе</a></li>
+                <li><a href="/">Район</a></li>
+                <li><a href="/">Каталог квартир</a></li>
+                <li><a href="/">Ипотека</a></li>
+                <li><a href="/">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__nav">
+            <nav>
+              <ul class="footer__nav-list">
+                <li><a href="/">Поселение и переезд</a></li>
+                <li><a href="/">Сервисные услуги</a></li>
+                <li><a href="/">Экологическая устойчивость</a></li>
+                <li><a href="/">Инвестиционные возможности</a></li>
+                <li><a href="/">Программа лояльности </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__address">
+            <ul class="footer__nav-list">
+              <li><a href="/">Адрес: Наб. реки Фонтанки 10-15</a></li>
+              <li><a href="/">Телефон: 8 (812) 123-45-67</a></li>
+              <li><a href="/">Отдел продаж: 10:00 - 20:00</a></li>
+              <li><a href="/">E-mail: <span>vip@lofthouse.ru</span></a></li>
+            </ul>
+
+            <ul class="footer__socials">
+              <li><a href="/"><img src="/img/footer/youtube.svg" alt="YouTube"></a></li>
+              <li><a href="/"><img src="/img/footer/vk.svg" alt="VK"></a></li>
+              <li><a href="/"><img src="/img/footer/facebook.svg" alt="Facebook"></a></li>
+              <li><a href="/"><img src="/img/footer/instagram.svg" alt="Instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
