@@ -20,10 +20,10 @@
   }
 
   &--point::before {
-    background-image: ('./../img/header/header-point.svg');
+    background: url('/img/header/header-point.svg');
   }
 
   &--tel::before {
-    background-image: ('./../img/header/header-call.svg');
+    background-image: url('/img/header/header-call.svg');
   }
 }

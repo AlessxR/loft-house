@@ -23,9 +23,36 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    width: 1110px;
+    max-width: 1110px;
+
+    &--small {
+        max-width: 840px;
+    }
 }
+
 
 .text-right {
     text-align: right;
+}
+
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.title-2 {
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.none {
+    display: none !important;
 }
