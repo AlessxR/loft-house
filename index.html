@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loft-House</title>
     <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="stylesheet" href="/libs/youtubeLightbox/youtubeLightbox.css">
   </head>
   <body>
     <header class="header">
@@ -27,7 +28,13 @@
               </nav>
             </div>
 
-            <div class="header__nav-btn">btn</div>
+            <div class="header__nav-btn">
+              <button class="nav-icon-btn">
+                <div class="nav-icon">
+
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -51,7 +58,7 @@
     </header>
 
     <main>
-      <section class="benefits none">
+      <section class="benefits">
         <h2 class="visually-hidden">Преимущества ЖК</h2>
 
         <div class="container container--small">
@@ -92,7 +99,7 @@
         </div>
       </section>
 
-      <section class="apartments none">
+      <section class="apartments">
         <div class="container">
           <div class="apartments__title">
             <h2 class="title-2">Наши квартиры</h2>
@@ -119,7 +126,7 @@
         </div>
       </section>
 
-      <section class="cta none">
+      <section class="cta">
         <div class="container">
           <div class="cta__title">
             <h2 class="title-2">Хотите посмотреть?</h2>
@@ -133,8 +140,8 @@
             </div>
             <form action="" class="cta__form form">
               <input type="text" class="form__input" placeholder="Ваше имя" />
-              <input type="text" class="form__input" placeholder="Ваше телефон" />
-              <p class="form__privacy">
+              <input data-tel-input type="text" class="form__input" placeholder="Ваше телефон" />
+              <p class="form__privacy form__privacy--bottom">
                 *Мы никому не передаем ваши данные.<br />
                 И не сохраняем ваш номер в базу.
               </p>
@@ -145,41 +152,43 @@
         </div>
       </section>
 
-      <section class="video none">
+      <section class="video">
         <h2 class="visually-hidden">Video...</h2>
         <div class="container">
-          <a href="google.com" class="video__link">
+          <a href="google.com" data-youtubeLightbox class="video__link">
             <img src="/img/video/play-button.svg" alt="Background video" class="video__icon" />
             <img src="/img/video/video-bg.svg" alt="Background video" class="video__img" />
           </a>
         </div>
       </section>
 
-      <section class="section-map none">
+      <section class="section-map">
         <div class="container">
           <div class="section-map__title">
             <h2 class="title-2">Район на карте</h2>
           </div>
 
           <div class="section-map__map">
-            <div class="map" id="map"></div>
+            <div class="map" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35841.6531706628!2d24.031839579395907!3d49.83864545424485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1744220355049!5m2!1sen!2sua" width="100%" height="100%" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="feedback none">
+      <section class="feedback">
         <div class="container">
           <div class="feedback__title">
             <h2 class="title-2">Есть вопросы?</h2>
           </div>
 
           <form class="feedback__form form">
-            <p class="form__privacy">
+            <p class="form__privacy form__privacy--bottom">
               *Мы никому не передаем ваши данные.<br />
               И не сохраняем ваш номер в базу.
             </p>
             <input type="text" class="form__input" placeholder="Ваше имя" />
-            <input type="text" class="form__input" placeholder="Ваше телефон" />
+            <input data-tel-input type="text" class="form__input" placeholder="Ваше телефон" />
 
             <button type="submit" class="form__btn">Посмотреть район</button>
           </form>
@@ -187,7 +196,7 @@
       </section>
     </main>
 
-    <footer class="footer none">
+    <footer class="footer">
       <div class="container">
         <div class="footer__grid">
           <div class="footer__logo">
@@ -235,5 +244,21 @@
         </div>
       </div>
     </footer>
+
+    <div id="youtubelightbox" class="youtubeLightbox">
+      <div class="youtubelightbox__centeredchild">
+        <div class="youtubelightbox__videowrapper">
+          <div id="youtubelightboxPlayer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

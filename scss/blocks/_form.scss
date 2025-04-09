@@ -31,6 +31,12 @@
     font-size: 13px;
     color: $privacy;
     line-height: 1.23;
+
+    &--bottom {
+        @include mediaTablet {
+            grid-row: 4 / 5;
+        }
+    }
 }
 
 .form__btn {
