@@ -1,1 +1,1 @@
-Page for practicing html, scss, (mini-js) skills and adaptive again.
+Stack: HTML, SCSS, JS(libraries)
